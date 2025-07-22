@@ -8,7 +8,7 @@
 
 $dbc = mysqli_connect('localhost','root','','detective')
 or die('error in establishing connection to database');
-$query = "insert into detective(first_name,last_name,email,ask,description,kidnappers_count,comments)values('".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['email']."','".$_POST['ask']."','".$_POST['description']."','".$_POST['aliens']."','".$_POST['comments']."')";
+$query = "insert into person(first_name,last_name,email,enquiry,description,kidnappers_count,comments)values('".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['email']."','".$_POST['ask']."','".$_POST['description']."','".$_POST['aliens']."','".$_POST['comments']."')";
 $result =mysqli_query($dbc,$query);
 if(!$result){
     die('error in executing query'.mysqli_error($dbc));
