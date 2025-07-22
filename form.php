@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Report Abduction Form</title>
-</head>
-<body>
+
 <?php
 $servername="deepuprojects.rf.gd";
 $username="if0_39530181";
@@ -22,5 +17,4 @@ mysqli_close($dbc);
 echo "<p>Thank you for reporting the abduction.</p>";
 echo "<p>We will review your report and take appropriate action.</p>";
 ?>
-</body>
-</html>
+
